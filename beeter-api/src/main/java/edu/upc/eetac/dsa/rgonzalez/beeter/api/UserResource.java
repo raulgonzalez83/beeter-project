@@ -70,7 +70,7 @@ public class UserResource {
 			stmtInsertUserIntoUserRoles.setString(1, user.getUsername());
 			stmtInsertUserIntoUserRoles.executeUpdate();
  
-			conn.commit();
+			conn.commit();//sii no guarfa datos en bbdd.
 		} catch (SQLException e) {
 			if (conn != null)
 				try {
